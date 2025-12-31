@@ -34,7 +34,7 @@ const CTASection = () => {
             {/* Right Visual - Same Foam background */}
             <div className="relative h-full min-h-[400px] lg:min-h-[500px] flex items-center justify-center pr-8">
               <img
-                src="/assets/images/africa-map.png"
+                src={`${import.meta.env.BASE_URL}assets/images/africa-map.png`}
                 alt="Africa Map"
                 className="w-full max-w-lg object-contain"
               />

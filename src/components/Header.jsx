@@ -18,7 +18,7 @@ const Header = () => {
               {/* Logo */}
               <Link to="/" className="flex items-center cursor-pointer">
                 <img
-                  src="/assets/logo/KoraGrid - Dark.svg"
+                  src={`${import.meta.env.BASE_URL}assets/logo/KoraGrid - Dark.svg`}
                   alt="KoraGrid Africa"
                   className="h-10"
                 />

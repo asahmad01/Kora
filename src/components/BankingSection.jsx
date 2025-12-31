@@ -73,7 +73,7 @@ const BankingSection = () => {
           {/* Right Visual */}
           <div className="flex items-center justify-center lg:justify-end">
             <img
-              src="/assets/images/Visual.png"
+              src={`${import.meta.env.BASE_URL}assets/images/Visual.png`}
               alt="Africa Map Visualization"
               className="w-full max-w-md lg:max-w-lg"
             />

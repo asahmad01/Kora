@@ -10,7 +10,7 @@ const ImageSection = () => {
       {/* Full-width image with overlay content */}
       <div className="relative w-full h-[420px] lg:h-[500px] overflow-hidden">
         <img
-          src="/assets/images/Man smiling woth phone in hand.jpg"
+          src={`${import.meta.env.BASE_URL}assets/images/Man smiling woth phone in hand.jpg`}
           alt="Professional using mobile device"
           className="w-full h-full object-cover object-center"
         />

@@ -73,7 +73,7 @@ const EducationSection = () => {
           {/* Right Visual */}
           <div className="flex items-center justify-center lg:justify-end">
             <img
-              src="/assets/images/Visual-2.png"
+              src={`${import.meta.env.BASE_URL}assets/images/Visual-2.png`}
               alt="Education Visualization"
               className="w-full max-w-md lg:max-w-lg"
             />

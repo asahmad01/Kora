@@ -6,7 +6,7 @@ const LandingPage = () => {
       className="w-full bg-white flex flex-col relative bg-cover bg-center bg-no-repeat"
       style={{
         minHeight: 'calc(100vh - 120px)',
-        backgroundImage: 'url(/assets/images/KoraGrid%20Hero%20Desktop.jpg)'
+        backgroundImage: `url(${import.meta.env.BASE_URL}assets/images/KoraGrid%20Hero%20Desktop.jpg)`
       }}
     >
       {/* Main content area - will expand to push stats to bottom */}

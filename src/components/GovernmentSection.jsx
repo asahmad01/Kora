@@ -9,7 +9,7 @@ const GovernmentSection = () => {
           <div className="order-2 lg:order-1">
             <div className="flex items-center justify-center lg:justify-start">
               <img
-                src="/assets/images/Visual-1.png"
+                src={`${import.meta.env.BASE_URL}assets/images/Visual-1.png`}
                 alt="Government Visualization"
                 className="w-full max-w-md lg:max-w-lg"
               />

@@ -23,7 +23,7 @@ const WhyChooseSection = () => {
             {/* Image */}
             <div className="aspect-[4/5] w-full">
               <img
-                src="/assets/images/Tech team looking at computer.jpg"
+                src={`${import.meta.env.BASE_URL}assets/images/Tech team looking at computer.jpg`}
                 alt="Built for Africa"
                 className="w-full h-full object-cover"
               />
@@ -46,7 +46,7 @@ const WhyChooseSection = () => {
             {/* Image */}
             <div className="aspect-[4/5] w-full">
               <img
-                src="/assets/images/laptop-server-room-black-man-network-database-maintenance-programming-software-typing-tech-data-center-happy-engineer-system-information-cybersecurity-cloud-computing.jpg"
+                src={`${import.meta.env.BASE_URL}assets/images/laptop-server-room-black-man-network-database-maintenance-programming-software-typing-tech-data-center-happy-engineer-system-information-cybersecurity-cloud-computing.jpg`}
                 alt="Security First"
                 className="w-full h-full object-cover"
               />
@@ -69,7 +69,7 @@ const WhyChooseSection = () => {
             {/* Image */}
             <div className="aspect-[4/5] w-full">
               <img
-                src="/assets/images/Tech team in office, with woman in front facing camera.jpg"
+                src={`${import.meta.env.BASE_URL}assets/images/Tech team in office, with woman in front facing camera.jpg`}
                 alt="Fast Implementation"
                 className="w-full h-full object-cover"
               />

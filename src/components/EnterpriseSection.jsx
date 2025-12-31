@@ -9,7 +9,7 @@ const EnterpriseSection = () => {
           <div className="order-2 lg:order-1">
             <div className="flex items-center justify-center lg:justify-start">
               <img
-                src="/assets/images/Visual-3.png"
+                src={`${import.meta.env.BASE_URL}assets/images/Visual-3.png`}
                 alt="Enterprise Logistics Visualization"
                 className="w-full max-w-md lg:max-w-lg"
               />
