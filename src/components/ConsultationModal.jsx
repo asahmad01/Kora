@@ -20,26 +20,36 @@ const ConsultationModal = ({ isOpen, onClose }) => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setSubmitStatus(null)
 
-    // TODO: Later integrate with Formspree - replace YOUR_FORM_ID with actual Formspree form ID
-    // const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body: JSON.stringify(formData)
-    // })
+    try {
+      const response = await fetch('https://formspree.io/f/xjgkqnko', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      })
 
-    // For now, just show success message
-    setTimeout(() => {
-      setSubmitStatus('success')
-      setFormData({ name: '', email: '', company: '', message: '' })
+      if (response.ok) {
+        setSubmitStatus('success')
+        setFormData({ name: '', email: '', company: '', message: '' })
+        setIsSubmitting(false)
+
+        // Close modal after 3 seconds
+        setTimeout(() => {
+          onClose()
+          setSubmitStatus(null)
+        }, 3000)
+      } else {
+        setSubmitStatus('error')
+        setIsSubmitting(false)
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
+      setSubmitStatus('error')
       setIsSubmitting(false)
-      setTimeout(() => {
-        onClose()
-        setSubmitStatus(null)
-      }, 3000)
-    }, 1000)
+    }
   }
 
   if (!isOpen) return null
