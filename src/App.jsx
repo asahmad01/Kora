@@ -44,7 +44,7 @@ function App() {
   return (
     <Router basename={import.meta.env.BASE_URL}>
       <ScrollToTop />
-      <div className="min-h-screen">
+      <div className="min-h-screen overflow-x-hidden">
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
